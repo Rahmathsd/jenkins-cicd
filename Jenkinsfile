@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/rahmathsd/jenkins-demo-app.git'
+                    url: 'https://github.com/rahmathsd/jenkins-cicd/.git'
             }
         }
 
