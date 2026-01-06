@@ -15,7 +15,7 @@ const Header = ({ setSearch }) => {
   return (
     <>
     <div className='header'>
-        <h1>Image Pool modified</h1>
+        <h1>Image Pool Generator</h1>
     
     </div>
 
