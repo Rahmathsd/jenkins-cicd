@@ -4,11 +4,12 @@ pipeline {
     stages {
 
         stage('Clone Code') {
+              stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/rahmathsd/jenkins-cicd.git'
+                checkout scm
             }
         }
+
 
         stage('Build Docker Image') {
             steps {
