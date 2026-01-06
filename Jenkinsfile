@@ -3,13 +3,11 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-              stage('Checkout') {
+        stage('Checkout Code') {
             steps {
                 checkout scm
             }
         }
-
 
         stage('Build Docker Image') {
             steps {
